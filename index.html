@@ -127,35 +127,55 @@
                     </p>
                 </div>
 
-                <div class="body animatable column gap-20">
-                    <div class="inputs column gap-10">
-                        <div class="form-elem column gap-5">
-                            <label for="loanAmount">Loan amount</label>
-                            <input type="number" name="loanAmount" id="loanAmount" class="input" placeholder="(rupees)">
+                <div class="body flex gap-50">
+                    <div class="stat animatable numbers column gap-40">
+                        <div class="inputs column gap-20">
+                            <div class="input-group res-row h-sb gap-10">
+                                <label for="loanAmount">Loan amount</label>
+                                <input type="text" name="loanAmount" id="loanAmount" class="input"
+                                    placeholder="(rupees)" value="1000000">
+                            </div>
+
+                            <div class="input-group res-row h-sb gap-10">
+                                <label for="interestRate">Interest rate</label>
+                                <input type="text" name="interestRate" id="interestRate" class="input"
+                                    placeholder="(annual)" value="6.5">
+                            </div>
+
+                            <div class="input-group res-row h-sb gap-10">
+                                <label for="loanTenure">Loan Tenure</label>
+                                <input type="text" name="loanTenure" id="loanTenure" class="input"
+                                    placeholder="(years)" value="2">
+                            </div>
                         </div>
 
-                        <div class="form-elem column gap-5">
-                            <label for="interestRate">Interest rate</label>
-                            <input type="number" name="interestRate" id="interestRate" class="input" placeholder="(annual)">
-                        </div>
+                        <div class="outputs column gap-20">
+                            <div class="output-group res-row h-sb gap-10">
+                                <span class="text">Monthly EMI</span>
+                                <span class="text" id="emiOutput">&#8377; 44,546</span>
+                            </div>
 
-                        <div class="form-elem column gap-5">
-                            <label for="tenure">Tenure</label>
-                            <input type="number" name="tenure" id="tenure" class="input" placeholder="(years)">
-                        </div>
+                            <div class="output-group res-row h-sb gap-10">
+                                <span class="text">Total interest</span>
+                                <span class="text" id="totalInterest">&#8377; 69,110</span>
+                            </div>
 
-                        <button class="btn fl" id="calculateBtn">Calculate</button>
+                            <div class="output-group res-row h-sb gap-10">
+                                <span class="text">Total amount</span>
+                                <span class="text" id="totalAmount">&#8377; 10,69,110</span>
+                            </div>
+                        </div>
                     </div>
-                    <hr class="divider">
-                    <div class="outputs row v-en gap-10">
-                        <h2 class="h2" id="emiOutput"></h2>
-                        <span class="text">/month</span>
+
+                    <div class="stat animatable visuals">
+                        <canvas id="amountChart"></canvas>
                     </div>
                 </div>
             </section>
         </section>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -83,11 +83,16 @@
 
 /* | FINANCE [START] */
 .finance .body {
-    max-width: 700px;
+    max-width: 900px;
     width: 100%;
-    border: 2px solid var(--border);
-    border-radius: 16px;
-    padding: 20px;
+}
+
+.finance .stat {flex: 1;}
+
+.finance .numbers .input {
+    border: none;
+    background-color: #348e72;
+    text-align: end;
 }
 
 /* & RESPONSIVE VERSIONS */
