@@ -1,0 +1,97 @@
+/* | HEADER & NAVBAR [START] */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+.header .section {
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.header .logo {margin: 0 auto;}
+.header .list {margin-left: auto;}
+
+.menu {cursor: pointer;}
+.menu:hover {color: var(--text-secondary);}
+
+.nav {
+    background-color: #1A1A1DA0;
+    padding: 50px;
+    backdrop-filter: blur(10px);
+    height: 100dvh;
+    width: max(40%, 300px);
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s, opacity 0.5s;
+    display: none;
+}
+
+.nav .list {text-align: end;}
+
+.nav .list li {
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+}
+
+.nav.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.nav .list li.show {transform: translateX(0);}
+.nav .list .link:hover {color: var(--text-secondary);}
+/* | HEADER & NAVBAR [END] */
+
+/* | HERO [START] */
+.hero {
+    height: 100dvh;
+    background-image: url('/assets/hero.png');
+    background-size: cover;
+}
+
+.hero .section {
+    align-items: start;
+    justify-content: end;
+}
+
+.hero .h1 {font-size: min(5rem, 15vw);}
+/* | HERO [END] */
+
+/* | MODELS [START] */
+.featured .body.grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.featured .model:hover .img {transform: scale(1.1);}
+
+.featured .model .image-content {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.featured .model .img {border-radius: 16px;}
+.featured .model .text-content {padding: 20px;}
+/* | MODELS [END] */
+
+/* | FINANCE [START] */
+.finance .body {
+    max-width: 700px;
+    width: 100%;
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+/* & RESPONSIVE VERSIONS */
+@media (max-width: 568px) {
+    .header .menu .text.title {display: none;}
+    .nav {padding: 20px;}
+}

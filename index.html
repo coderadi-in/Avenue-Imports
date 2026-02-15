@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
+    <title>Avenue Imports | Authorized Avenue Dealership in Lucknow</title>
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="anim.css">
+</head>
+
+<body>
+    <header class="header">
+        <section class="section grid h-sb">
+            <div class="menu open row gap-10">
+                <span class="symbol">menu</span>
+                <span class="text title">Menu</span>
+            </div>
+
+            <img src="assets/logo.png" alt="Avenue Imports - Logo" class="logo">
+
+            <ul class="list row gap-10">
+                <li><a href="mailto:adi@coderadi.in" class="link">
+                        <span class="symbol fl-icon">mail</span>
+                    </a></li>
+
+                <li><a href="#" class="link">
+                        <span class="symbol fl-icon">location_on</span>
+                    </a></li>
+            </ul>
+        </section>
+    </header>
+
+    <nav class="nav column h-sb gap-20">
+        <div class="menu close row gap-10">
+            <span class="symbol">close</span>
+            <span class="text title">Close</span>
+        </div>
+
+        <ul class="list column gap-20">
+            <li><a href="#" class="link title">Home</a></li>
+            <li><a href="#" class="link title">Models</a></li>
+            <li><a href="#" class="link title">About us</a></li>
+            <li><a href="#" class="link title">Contact</a></li>
+        </ul>
+
+        <div class="spare-item"></div>
+    </nav>
+
+    <main class="main column gap-100">
+        <section class="hero">
+            <section class="section column center gap-20">
+                <h1 class="h1 animatable">Avenue Imports</h1>
+                <h3 class="h3 animatable">Authorized Avenue Dealership in Lucknow.</h3>
+                <a href="#" class="link btn fl animatable">Book a Test Drive</a>
+            </section>
+        </section>
+
+        <section class="featured">
+            <section class="section column gap-50">
+                <div class="head column v-center gap-10">
+                    <h1 class="h1">Explore models</h1>
+                    <p class="para">Explore a curated selection of luxury cars from Avenue.</p>
+                </div>
+
+                <div class="body grid gap-20">
+                    <div class="model column">
+                        <div class="image-content">
+                            <img src="models/as-5.png" alt="Avenue AS-5" class="img">
+                        </div>
+
+                        <div class="text-content column gap-10">
+                            <h2 class="h2">Avenue AS-5</h2>
+                            <p class="para">Starting from ₹1,75,00,000</p>
+
+                            <div class="cta res-row gap-10">
+                                <a href="#" class="link btn fl">Book a test drive</a>
+                                <a href="#" class="link btn ot">View details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="model column">
+                        <div class="image-content">
+                            <img src="models/ax-7.png" alt="Avenue AX-7" class="img">
+                        </div>
+
+                        <div class="text-content column gap-10">
+                            <h2 class="h2">Avenue AX-7</h2>
+                            <p class="para">Starting from ₹2,25,00,000</p>
+
+                            <div class="cta res-row gap-10">
+                                <a href="#" class="link btn fl">Book a test drive</a>
+                                <a href="#" class="link btn ot">View details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="model column">
+                        <div class="image-content">
+                            <img src="models/am-8.png" alt="Avenue AM-8" class="img">
+                        </div>
+
+                        <div class="text-content column gap-10">
+                            <h2 class="h2">Avenue AM-8</h2>
+                            <p class="para">Starting from ₹2,50,00,000</p>
+
+                            <div class="cta res-row gap-10">
+                                <a href="#" class="link btn fl">Book a test drive</a>
+                                <a href="#" class="link btn ot">View details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="finance">
+            <section class="section column v-center gap-50">
+                <div class="head animatable column v-center gap-10">
+                    <h1 class="h1">Finance calculator</h1>
+                    <p class="para">Checkout the monthly installment on your model easily with the finance calculator.
+                    </p>
+                </div>
+
+                <div class="body animatable column gap-20">
+                    <div class="inputs column gap-10">
+                        <div class="form-elem column gap-5">
+                            <label for="loanAmount">Loan amount</label>
+                            <input type="number" name="loanAmount" id="loanAmount" class="input" placeholder="(rupees)">
+                        </div>
+
+                        <div class="form-elem column gap-5">
+                            <label for="interestRate">Interest rate</label>
+                            <input type="number" name="interestRate" id="interestRate" class="input" placeholder="(annual)">
+                        </div>
+
+                        <div class="form-elem column gap-5">
+                            <label for="tenure">Tenure</label>
+                            <input type="number" name="tenure" id="tenure" class="input" placeholder="(years)">
+                        </div>
+
+                        <button class="btn fl" id="calculateBtn">Calculate</button>
+                    </div>
+                    <hr class="divider">
+                    <div class="outputs row v-en gap-10">
+                        <h2 class="h2" id="emiOutput"></h2>
+                        <span class="text">/month</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

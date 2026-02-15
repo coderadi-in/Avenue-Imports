@@ -1,0 +1,54 @@
+/* | HERO [START] */
+.hero .animatable {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 
+        transform 0.6s ease-in-out,
+        opacity 0.6s ease-in-out;
+}
+
+.hero.visible .animatable {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.hero .animatable:nth-child(1) {transition-delay: 0ms;}
+.hero .animatable:nth-child(2) {transition-delay: 100ms;}
+.hero .animatable:nth-child(3) {transition-delay: 200ms;}
+/* | HERO [END] */
+
+/* | FEATURED [START] */
+.featured .model {
+    transform: translateY(60px);
+    opacity: 0;
+    transition: 
+        transform 0.6s ease-in-out,
+        opacity 0.6s ease-in-out;
+}
+
+.featured.visible .model {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.featured .model:nth-child(1) {transition-delay: 0ms;}
+.featured .model:nth-child(2) {transition-delay: 100ms;}
+.featured .model:nth-child(3) {transition-delay: 300ms;}
+/* | FEATURED [END] */
+
+/* | FINANCE [START] */
+.finance .animatable {
+    transform: translateY(60px);
+    opacity: 0;
+    transition: 
+        transform 0.6s ease-in-out,
+        opacity 0.6s ease-in-out;
+}
+
+.finance.visible .animatable {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.finance .animatable:nth-child(1) {transition-delay: 0ms;}
+.finance .animatable:nth-child(2) {transition-delay: 100ms;}
