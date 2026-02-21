@@ -8,9 +8,10 @@
     <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
     <title>Avenue Imports | Authorized Avenue Dealership in Lucknow</title>
 
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="anim.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/trade-in.css">
+    <link rel="stylesheet" href="styles/anim.css">
 </head>
 
 <body>
@@ -180,141 +181,69 @@
                     <h1 class="h1">Upgrade your drive</h1>
                     <p class="para">Share a few details and our team will provide a personalized exchange offer within
                         minutes.</p>
+
+                    <div class="btn icon-fl" id="tradeInOpen">
+                        <span class="text title">OPEN TRADE-IN FORM</span>
+                        <span class="symbol">expand_content</span>
+                    </div>
                 </div>
 
-                <form action="#" method="post" class="form column v-center gap-40">
-                    <div class="wizard">
-                        <div class="content column h-en gap-20">
-                            <h2 class="h2">Vehicle Details</h2>
+                <div class="transformer">
+                    <form action="" method="post" class="form">
+                        <div class="wizard">
+                            <div class="content column h-en gap-20">
+                                <h2 class="h2">Vehicle Details</h2>
 
-                            <input required type="text" name="brandName" id="brandName" class="input" placeholder="Brand">
-                            <input required type="text" name="modelName" id="modelName" class="input" placeholder="Model">
-                            <input required type="text" name="yearManufacture" id="yearManufacture" class="input"
-                                placeholder="Year of manufacture">
-                            <input required type="number" name="kmDriven" id="kmDriven" class="input"
-                                placeholder="Kilometers Driven">
+                                <input required type="text" name="brandName" id="brandName" class="input"
+                                    placeholder="Brand">
+                                <input required type="text" name="modelName" id="modelName" class="input"
+                                    placeholder="Model">
+                                <input required type="text" name="yearManufacture" id="yearManufacture" class="input"
+                                    placeholder="Year of manufacture">
+                                <input required type="number" name="kmDriven" id="kmDriven" class="input"
+                                    placeholder="Kilometers Driven">
 
-                            <select required name="fuelType" id="fuelType" class="input">
-                                <option value="">Fuel Type</option>
-                                <option value="petrol">Petrol</option>
-                                <option value="diesel">Diesel</option>
-                                <option value="hybrid">Hybrid</option>
-                                <option value="electric">Electric</option>
-                            </select>
+                                <select required name="fuelType" id="fuelType" class="input">
+                                    <option value="">Fuel Type</option>
+                                    <option value="petrol">Petrol</option>
+                                    <option value="diesel">Diesel</option>
+                                    <option value="hybrid">Hybrid</option>
+                                    <option value="electric">Electric</option>
+                                </select>
 
-                            <select required name="transmission" id="transmission" class="input">
-                                <option value="">Transmission</option>
-                                <option value="manual">Manual</option>
-                                <option value="automatic">Automatic</option>
-                            </select>
+                                <select required name="transmission" id="transmission" class="input">
+                                    <option value="">Transmission</option>
+                                    <option value="manual">Manual</option>
+                                    <option value="automatic">Automatic</option>
+                                </select>
 
-                            <div class="btn icon-fl disabled">
-                                <span class="text">Continue</span>
-                                <span class="symbol">keyboard_arrow_right</span>
+                                <div class="btn icon-fl disabled">
+                                    <span class="text">Continue</span>
+                                    <span class="symbol">keyboard_arrow_right</span>
+                                </div>
                             </div>
+
+                            <div class="btn icon-ot close-tradeIn-btn">
+                                <span class="symbol">collapse_content</span>
+                                <span class="text">Close</span>
+                            </div>
+
+                            <img src="assets/step-1-bg.png" alt="Background Image" class="bg img">
+                            <img src="assets/step-1.png" alt="Background Image" class="bg-res img">
                         </div>
-
-                        <img src="assets/step-1.png" alt="Vehicle Details" class="bg img">
-                    </div>
-
-                    <div class="wizard">
-                        <div class="content column h-en gap-20">
-                            <h2 class="h2">Vehicle Condition</h2>
-
-                            <select required name="overallCondition" id="overallCondition" class="input">
-                                <option value="">Overall condition</option>
-                                <option value="excellent">Excellent</option>
-                                <option value="good">Good</option>
-                                <option value="fair">Fair</option>
-                                <option value="needsRepair">Needs repair</option>
-                            </select>
-
-                            <select required name="accidentHistory" id="accidentHistory" class="input">
-                                <option value="">Accident history</option>
-                                <option value="none">None</option>
-                                <option value="minor">Minor</option>
-                                <option value="major">Major</option>
-                            </select>
-
-                            <input required type="number" name="numberOfOwners" id="numberOfOwners" class="input" placeholder="Number of Previous Owners">
-
-                            <select required name="serviceHistory" id="serviceHistory" class="input">
-                                <option value="">Service Records Available?</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-
-                            <input type="file" name="photoUpload" id="photoUpload" class="input" placeholder="Upload Photos (recommended)" accept="image/*">
-
-                            <div class="btn icon-fl disabled">
-                                <span class="text">Continue</span>
-                                <span class="symbol">keyboard_arrow_right</span>
-                            </div>
-                        </div>
-
-                        <img src="assets/step-2.png" alt="Vehicle Condition" class="bg img">
-                    </div>
-
-                    <div class="wizard">
-                        <div class="content column h-en gap-20">
-                            <h2 class="h2">Your Next Upgrade</h2>
-
-                            <select required name="timeLine" id="timeLine" class="input">
-                                <option value="">When are you planning to upgrade?</option>
-                                <option value="immediately">Immediately</option>
-                                <option value="within30">Within 30 days</option>
-                                <option value="justValue">Just checking value</option>
-                            </select>
-
-                            <select required name="preferredType" id="preferredType" class="input">
-                                <option value="">Preferred vehicle type</option>
-                                <option value="sedan">Sedan</option>
-                                <option value="suv">SUV</option>
-                                <option value="luxury">Luxury</option>
-                                <option value="notDecided">Not decided yet</option>
-                            </select>
-
-                            <input type="text" name="budget" id="budget" class="input" placeholder="Estimated budget (optional)">
-
-                            <div class="btn icon-fl disabled">
-                                <span class="text">Continue</span>
-                                <span class="symbol">keyboard_arrow_right</span>
-                            </div>
-                        </div>
-
-                        <img src="assets/step-3.png" alt="Your Next Upgrade" class="bg img">
-                    </div>
-
-                    <div class="wizard">
-                        <div class="content column h-en gap-20">
-                            <h2 class="h2">Receive Your Valuation</h2>
-
-                            <input required type="text" name="name" id="name" class="input" placeholder="Full Name">
-                            <input required type="tel" name="phone" id="phone" class="input" placeholder="Mobile Number">
-
-                            <div class="row gap-10">
-                                <input required type="checkbox" name="sameWhatsapp" id="sameWhatsapp" class="input">
-                                <label for="sameWhatsapp">Contact me on WhatsApp</label>
-                            </div>
-
-                            <input type="email" name="email" id="email" class="input" placeholder="Email (optional)">
-                            <span class="mini">We respect your privacy. No spam. No obligations.</span>
-
-                            <div class="btn icon-fl disabled">
-                                <span class="text">Get My Trade-In Value</span>
-                                <span class="symbol">start</span>
-                            </div>
-                        </div>
-
-                        <img src="assets/step-4.png" alt="Receive Your Valuation" class="bg img">
-                    </div>
-                </form>
+                    </form>
+                </div>
             </section>
         </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="scripts/header.js"></script>
+    <script type="module" src="scripts/chart.js"></script>
+    <script type="module" src="scripts/observer.js"></script>
+    <script type="module" src="scripts/finance.js"></script>
+    <script type="module" src="scripts/trade-in.js"></script>
+    <script type="module" src="scripts/script.js"></script>
 </body>
 
 </html>
