@@ -102,7 +102,7 @@
 /* | HERO [START] */
 .hero {
     height: 100dvh;
-    background-image: url('assets/cover.png');
+    background-image: url('../assets/cover.png');
     background-size: cover;
 }
 
